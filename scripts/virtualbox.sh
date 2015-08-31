@@ -1,7 +1,11 @@
 #!/bin/bash
 
 # Bail if we are not running inside VirtualBox.
-if [[ `facter virtual` != "virtualbox" ]]; then
+if [[ `facter virtual` != "virtualbox" ]] \
+    && [[ `facter bios_version` != "VirtualBox" ]] \
+    && [[ `facter boardproductname` != "VirtualBox" ]] \
+    && [[ `facter productname` != "VirtualBox" ]]
+then
     exit 0
 fi
 
