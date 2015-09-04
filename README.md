@@ -20,7 +20,7 @@ packer build template.json -only=virtualbox-iso
 ```
 or
 ````
-packer build template.json -only=virtualbox-iso
+packer build template.json -only=vmware-iso
 ```
 based on your needs.
 
