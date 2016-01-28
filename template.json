@@ -47,7 +47,7 @@
             ],
             "headless": false,
             "boot_wait": "10s",
-            "disk_size": 20480,
+            "disk_size": 24576,
             "guest_os_type": "Debian_64",
             "http_directory": "http",
             "iso_checksum": "1dae8556e57bb04bf380b2dbf64f3e6c61f9c28cbb6518aabae95a003c89739a",
