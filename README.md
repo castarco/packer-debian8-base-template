@@ -5,7 +5,7 @@ In this repo you can find a minimal Debian 8 image for Vagrant.
 If you don't have special needs for your project you can start with the already built image hosted in Atlas:
 
 ```
-vagrant init danielvigueras/debian8-base
+vagrant init castarco/debian_jessie64
 ```
 
 A `Vagrantfile` will be created in the current dir. Then, to start the VM you only have to type:
@@ -14,13 +14,9 @@ vagrant up
 ```
 
 ## Building your own image
-If this image doesn't suit your needs you'll have to build your own. First of all, you need to get [Packer](https://www.packer.io/). After that, you need to get either [Virtualbox](https://www.packer.io/docs/builders/virtualbox-iso.html) or [VMWare](https://www.packer.io/docs/builders/vmware-iso.html). Then, clone this repo and run:
+If this image doesn't suit your needs you'll have to build your own. First of all, you need to get [Packer](https://www.packer.io/). After that, you need to get [Virtualbox](https://www.packer.io/docs/builders/virtualbox-iso.html):
 ```
 packer build template.json -only=virtualbox-iso
-```
-or
-````
-packer build template.json -only=vmware-iso
 ```
 based on your needs.
 
